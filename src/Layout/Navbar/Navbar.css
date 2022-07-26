@@ -1,0 +1,42 @@
+.mainNavbar{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    left: 0;
+    top:0;
+    padding: 0px 100px 0px;
+    background-color: var(--mainColor);
+    box-shadow: var(--secondaryShadow);
+}
+
+.blocoLogo{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(75, 75, 75, 0.653);
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.blocoButtons{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: fit-content;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blocoButtons h4{
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;
+}

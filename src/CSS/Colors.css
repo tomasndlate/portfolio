@@ -1,0 +1,13 @@
+:root{
+    --mainColor: rgb(255, 255, 255);
+    --secondaryColor: white;
+
+    --mainTextColor: black;
+    --secondaryTextColor: #4fc785;
+
+    --mainBoxShadow: 
+        2px 2px 7px 0px #6565652f,
+        -2px -2px 7px 0px #ffffff;
+    
+    --secondaryShadow: 2px 2px 7px 0px #4b4b4b33;
+}

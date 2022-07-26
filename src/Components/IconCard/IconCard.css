@@ -1,0 +1,36 @@
+.mainIconCard{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: var(--mainColor);
+    border-radius: 4px;
+    gap: 3px;
+    cursor: pointer;
+    -moz-box-shadow: 
+        var(--mainBoxShadow),
+        inset 4px 4px 8px 0px rgba(59, 59, 59, 0.1);
+    -webkit-box-shadow: 
+        var(--mainBoxShadow),
+        inset 4px 4px 8px 0px rgba(59, 59, 59, 0.1);
+    box-shadow: 
+        var(--mainBoxShadow),
+        inset 4px 4px 8px 0px rgba(59, 59, 59, 0.1);
+}
+
+.mainIconCard img{
+    position: relative;
+    height: 40%;
+    width: auto;
+    display: block;
+}
+
+.mainIconCard h3{
+    position: relative;
+    font-size: 9px;
+    font-weight: 400;
+    display: block;
+}
