@@ -10,4 +10,7 @@
         -2px -2px 7px 0px #ffffff;
     
     --secondaryShadow: 2px 2px 7px 0px #4b4b4b33;
+
+    --mainHelloColor:#44c18d;;
+    --secondaryHelloColor: #6ddcb5;;
 }

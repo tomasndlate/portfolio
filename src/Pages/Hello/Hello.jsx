@@ -7,7 +7,10 @@ import {
   iconPython,
   iconGithub,
   iconLinkedIn,
+  fotoHello,
 } from "../../Images/index";
+
+import { HelloPhoto } from "./HelloPhoto/HelloPhoto";
 
 const Hello = () => {
   return (
@@ -47,7 +50,14 @@ const Hello = () => {
             </div>
           </div>
         </div>
-        <div className="rightHello"></div>
+        <div className="rightHello">
+          <h1 className="backTextHello">
+            <span>Tomás</span>
+            <br />
+            <span>Ndlate</span>
+          </h1>
+          <HelloPhoto fotoHello={fotoHello} />
+        </div>
       </div>
     </div>
   );
