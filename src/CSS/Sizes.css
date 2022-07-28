@@ -1,5 +1,5 @@
 :root{
-    --mainPadding: 0px 100px 50px;
+    --mainPadding: 0px 100px 0px;
 }
 
 *{
@@ -16,7 +16,27 @@
     height: 100%;
     padding: var(--mainPadding);
     padding-top: 60px;
+    /* padding-bottom: 50px; */
     overflow-y: auto;
     overflow-x: hidden;
     background-color: var(--mainColor);
+}
+
+/* Se mair que 1800px */
+@media screen and (min-width: 1800px) {
+    :root {
+        --mainPadding: 0px calc((100% - 1600px) / 2) 0px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    :root {
+        --mainPadding: 0px 50px 0px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    :root {
+        --mainPadding: 0px 15px 0px;
+    }
 }

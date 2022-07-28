@@ -1,10 +1,12 @@
 import "./Navbar.css";
 
+import { iconPortfolio } from "../../Images/index";
+
 const Navbar = () => {
   return (
     <header className="mainNavbar">
       <div className="blocoLogo">
-        <img src="" alt="" />
+        <img src={iconPortfolio} alt="Logotipo portfolio - Tomás Ndlate" />
       </div>
       <div className="blocoButtons">
         <h4>Hello</h4>

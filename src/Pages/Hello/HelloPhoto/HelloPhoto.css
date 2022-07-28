@@ -104,3 +104,9 @@
     opacity: .2;
     z-index: 1;
 }
+
+@media screen and (max-width: 1000px) {
+    .blockFotoHello {
+        margin-top: -10vw;
+    }
+}

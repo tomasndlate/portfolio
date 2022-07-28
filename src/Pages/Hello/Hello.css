@@ -1,10 +1,13 @@
 .mainHello{
     position: relative;
-    display: block;
+    display: flex;
+    align-items: center;
     width: 100%;
     height: fit-content;
     min-height: 100%;
     padding-top: 40px;
+    padding-bottom: 50px;
+    /* background-color: aqua; */
 }
 .gridHello{
     position: relative;
@@ -18,8 +21,9 @@
 .leftHello, .rightHello{
     position: relative;
     width: 100%;
-    height: min-content;
+    height: fit-content;
     text-align: left;
+    /* background-color: red; */
 }
 
 .leftHello h4{
@@ -38,8 +42,9 @@
     margin-bottom: 25px;
 }
 
-.leftHello h1 span{
+.nameHello {
     color: var(--secondaryTextColor);
+    white-space: nowrap;
 }
 
 .leftHello h5{
@@ -56,8 +61,10 @@
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-row: auto auto;
     /* grid-template-rows: 200px; */
     width: 100%;
+    text-align: left;
     /* height: fit-content; */
     /* min-height: 100px; TIRAR */
     /* background-color: pink; */
@@ -88,6 +95,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 
 .backTextHello{
@@ -106,4 +116,65 @@
 .backTextHello span:last-child {
     position: relative;
     margin-left: 8vw;
+}
+
+@media screen and (max-width: 1000px) {
+    .gridHello {
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+
+    .rightHello {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .backTextHello {
+        font-size: 20vw;
+        line-height: 20vw;
+    }
+
+    .backTextHello span:last-child {
+        margin-left: 15vw;
+    }
+
+    .rightHello {
+        height: 50vw;
+    }
+
+    .leftHello h5 {
+        margin-bottom: 0px;
+    }
+
+    .leftHello h1 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .infoBlock{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .leftHello h1 {
+        font-size: 35px;
+        font-weight: 600;
+    }
+
+    .iamHello::before{
+        white-space: pre;
+        /* content: "\a"; */
+    }
+}
+
+@media screen and (max-width: 490px){
+    .leftHello h5 {
+        font-size: 11px;
+        line-height: 17px;
+        /* letter-spacing: 1.2px; */
+    }
+    .infoBlock {
+        margin-top: 35px;
+    }
 }

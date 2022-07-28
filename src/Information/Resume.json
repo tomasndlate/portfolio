@@ -1,0 +1,37 @@
+{
+"resume":[
+
+  {"titulo":"Education", 
+   "experiencia":[
+    {"nome":"University of Lisbon, Science Faculty", 
+     "ano":"2019 - 2022", 
+     "descricao":"Bachelor in Information Technology",
+     "logotipos": ["fcul-logo.png", "ulisboa-logo.png"]},
+    {"nome":"Lisbon School of Economics and Management", 
+     "ano":"2021 - 2022", 
+     "descricao":"Minor in Management",
+     "logotipos": ["iseg-logo.png", "ulisboa-logo.png"]},
+    {"nome":"Secondary School Romeu Correia", 
+     "ano":"2016 - 2019", 
+     "descricao":"Science and technology",
+     "logotipos": ["romeu-logo.png"]}
+  ]},
+
+  {"titulo":"Employment", 
+   "experiencia":[
+    {"nome":"EDP Global Solution", 
+     "ano":"2022", 
+     "descricao":"Summer Internship at UPG Geração",
+     "logotipos": ["edp-logo.png"]},
+    {"nome":"Impacto", 
+     "ano":"2019 - 2022", 
+     "descricao":"Waitress",
+     "logotipos": []},
+    {"nome":"Nestlé", 
+     "ano":"2017", 
+     "descricao":"Summer Internship at Supply Chain",
+     "logotipos": ["nestle-logo.png"]}
+  ]}
+
+]
+}

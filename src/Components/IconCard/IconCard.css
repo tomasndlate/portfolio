@@ -9,7 +9,6 @@
     background-color: var(--mainColor);
     border-radius: 4px;
     gap: 3px;
-    cursor: pointer;
     -moz-box-shadow: 
         var(--mainBoxShadow),
         inset 4px 4px 8px 0px rgba(59, 59, 59, 0.1);
@@ -19,6 +18,7 @@
     box-shadow: 
         var(--mainBoxShadow),
         inset 4px 4px 8px 0px rgba(59, 59, 59, 0.1);
+    cursor: pointer;
 }
 
 .mainIconCard img{
@@ -33,4 +33,21 @@
     font-size: 9px;
     font-weight: 400;
     display: block;
+}
+
+@media screen and (max-width: 650px) {
+    .mainIconCard {
+        width: 55px;
+        height: 55px;
+    }
+    .mainIconCard h3 {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .mainIconCard {
+        width: 52px;
+        height: 52px;
+    }
 }

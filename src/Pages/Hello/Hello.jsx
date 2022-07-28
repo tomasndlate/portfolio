@@ -19,8 +19,8 @@ const Hello = () => {
         <div className="leftHello">
           <h4>I've just graduated in Information Technology</h4>
           <h1>
-            Hi, I'm
-            <span> Tomás Ndlate</span>
+            Hi, <span className="iamHello">I'm</span>
+            <span className="nameHello"> Tomás Ndlate</span>
             <br />a Effect_
           </h1>
           <h5>
@@ -32,23 +32,6 @@ const Hello = () => {
             Immense desire to apply my knowledge on a profesional way and
             explore the different areas of IT.
           </h5>
-          <div className="infoBlock">
-            <div>
-              <h4>Find me</h4>
-              <div className="displayerSocial">
-                <IconCard icon={iconGithub} name="Github" link="" />
-                <IconCard icon={iconLinkedIn} name="LinkedIn" link="" />
-              </div>
-            </div>
-            <div>
-              <h4>Best skills</h4>
-              <div className="displayerSkills">
-                <IconCard icon={iconReact} name="React" link="" />
-                <IconCard icon={iconCSS} name="CSS" link="" />
-                <IconCard icon={iconPython} name="Python" link="" />
-              </div>
-            </div>
-          </div>
         </div>
         <div className="rightHello">
           <h1 className="backTextHello">
@@ -57,6 +40,23 @@ const Hello = () => {
             <span>Ndlate</span>
           </h1>
           <HelloPhoto fotoHello={fotoHello} />
+        </div>
+        <div className="infoBlock">
+          <div>
+            <h4>Find me</h4>
+            <div className="displayerSocial">
+              <IconCard icon={iconGithub} name="Github" link="" />
+              <IconCard icon={iconLinkedIn} name="LinkedIn" link="" />
+            </div>
+          </div>
+          <div>
+            <h4>Best skills</h4>
+            <div className="displayerSkills">
+              <IconCard icon={iconReact} name="React" link="" />
+              <IconCard icon={iconCSS} name="CSS" link="" />
+              <IconCard icon={iconPython} name="Python" link="" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
