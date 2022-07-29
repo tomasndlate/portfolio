@@ -1,4 +1,6 @@
+import React, { useEffect, useRef, useState } from "react";
 import "./Hello.css";
+
 import { IconCard } from "../../Components/index";
 
 import {
@@ -13,6 +15,46 @@ import {
 import { HelloPhoto } from "./HelloPhoto/HelloPhoto";
 
 const Hello = () => {
+  const wordsEffect = [" Software Dev", " Front-end Dev", "n IT Graduated"];
+  const [word, setWord] = useState("");
+
+  function sleep(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  }
+
+  async function changeWordEffect() {
+    let wordPosition = 0;
+
+    while (true) {
+      let wordLength = wordsEffect[wordPosition].length;
+
+      // ADICIONAR CARACTER
+      for (let i = 0; i < wordLength; i++) {
+        setWord((word) => word + wordsEffect[wordPosition].charAt(i));
+        await sleep(1 * 80);
+      }
+
+      // TEMPO QUE A PLAVRA FICA VISIVEL
+      await sleep(1 * 3000);
+
+      // REMOVER CARACTER
+      for (let k = wordLength; k >= 0; k--) {
+        await sleep(1 * 80);
+        setWord((word) => word.slice(0, -1));
+      }
+
+      if (wordPosition === wordsEffect.length - 1) {
+        wordPosition = 0;
+      } else {
+        wordPosition++;
+      }
+    }
+  }
+
+  useEffect(() => {
+    changeWordEffect();
+  }, []);
+
   return (
     <div className="mainHello">
       <div className="gridHello">
@@ -21,7 +63,8 @@ const Hello = () => {
           <h1>
             Hi, <span className="iamHello">I'm</span>
             <span className="nameHello"> Tomás Ndlate</span>
-            <br />a Effect_
+            <br />a{word}
+            <span className="writerUnderlineHello">_</span>
           </h1>
           <h5>
             Bachelor’s in Information Technology {"(IT)"}, in University of

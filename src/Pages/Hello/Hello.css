@@ -37,7 +37,7 @@
 .leftHello h1 {
     /* font-family: Lato; */
     position: relative;
-    font-size: 50px;
+    font-size: 48px;
     font-weight: 600;
     margin-bottom: 25px;
 }
@@ -45,6 +45,10 @@
 .nameHello {
     color: var(--secondaryTextColor);
     white-space: nowrap;
+}
+
+.writerUnderlineHello{
+    color: var(--secondaryTextColor);
 }
 
 .leftHello h5{
@@ -118,7 +122,8 @@
     margin-left: 8vw;
 }
 
-@media screen and (max-width: 1000px) {
+/* Should be 1000px */
+@media screen and (max-width: 1170px) {
     .gridHello {
         grid-template-columns: 1fr;
         grid-gap: 30px;
