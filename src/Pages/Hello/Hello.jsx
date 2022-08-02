@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Hello.css";
 
 import { IconCard } from "../../Components/index";
@@ -14,7 +14,7 @@ import {
 
 import { HelloPhoto } from "./HelloPhoto/HelloPhoto";
 
-const Hello = () => {
+const Hello = (props, ref) => {
   const wordsEffect = [" Software Dev", " Front-end Dev", "n IT Graduated"];
   const [word, setWord] = useState("");
 
@@ -56,7 +56,7 @@ const Hello = () => {
   }, []);
 
   return (
-    <div className="mainHello">
+    <div ref={ref} className="mainHello">
       <div className="gridHello">
         <div className="leftHello">
           <h4>I've just graduated in Information Technology</h4>
@@ -106,4 +106,6 @@ const Hello = () => {
   );
 };
 
-export { Hello };
+const ForwaredHello = React.forwardRef(Hello);
+
+export { ForwaredHello };

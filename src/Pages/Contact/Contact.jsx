@@ -1,10 +1,11 @@
+import React from "react";
 import "./Contact.css";
 
 import { fotoContact } from "../../Images/index";
 
-const Contact = () => {
+const Contact = (props, ref) => {
   return (
-    <div className="mainContact">
+    <div ref={ref} className="mainContact">
       <div className="backgroundContact"></div>
       <div className="blockTextContact">
         <h3>Hi! I'm looking for a new oportunity!</h3>
@@ -27,4 +28,6 @@ const Contact = () => {
   );
 };
 
-export { Contact };
+const ForwaredContact = React.forwardRef(Contact);
+
+export { ForwaredContact };

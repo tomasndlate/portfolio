@@ -1,7 +1,7 @@
-import {Hello} from "./Hello/Hello"
-import {Resume} from "./Resume/Resume"
-import { Portfolio } from "./Portfolio/Portfolio"
-import { Contact } from "./Contact/Contact"
+import { ForwaredHello } from "./Hello/Hello"
+import { ForwaredResume } from "./Resume/Resume"
+import { ForwaredPortfolio } from "./Portfolio/Portfolio"
+import { ForwaredContact } from "./Contact/Contact"
 
 
-export {Hello, Resume, Portfolio, Contact}
+export {ForwaredHello, ForwaredResume, ForwaredPortfolio, ForwaredContact}

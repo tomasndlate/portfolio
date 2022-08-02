@@ -1,3 +1,4 @@
+import React from "react";
 import "./Resume.css";
 
 import { ResumeJson } from "../../Information/index";
@@ -65,9 +66,9 @@ function uploadResumeHistory() {
   return result;
 }
 
-const Resume = () => {
+const Resume = (props, ref) => {
   return (
-    <div className="mainResume">
+    <div ref={ref} className="mainResume">
       {uploadResumeHistory()}
       <div className="blockOfResume">
         <h2 className="titleBlockResume">General skills</h2>
@@ -83,4 +84,6 @@ const Resume = () => {
   );
 };
 
-export { Resume };
+const ForwaredResume = React.forwardRef(Resume);
+
+export { ForwaredResume };

@@ -1,3 +1,4 @@
+import React from "react";
 import "./Portfolio.css";
 
 import { Project } from "./Project/Project";
@@ -26,13 +27,15 @@ function uploadPortfolioProjects() {
   return result;
 }
 
-const Portfolio = () => {
+const Portfolio = (props, ref) => {
   return (
-    <div className="mainPortfolio">
+    <div ref={ref} className="mainPortfolio">
       <h2 className="titleBlockPorfolio">Projects</h2>
       {uploadPortfolioProjects()}
     </div>
   );
 };
 
-export { Portfolio };
+const ForwaredPortfolio = React.forwardRef(Portfolio);
+
+export { ForwaredPortfolio };
