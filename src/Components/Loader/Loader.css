@@ -1,0 +1,127 @@
+
+:root {
+    --logo-stick-stroke: 7px;
+    --time-stick-transition: .2s;
+}
+
+.main-logo-loader{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    /* background-color: rgb(255, 255, 255); */
+    background-image: linear-gradient(to right bottom, #f0f0f0, #f4f4f4, #f7f7f7, #fbfbfb, #ffffff);
+}
+
+.logo-loader {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    animation: logo-go-out 1.2s ease-in-out forwards;
+    animation-delay: calc(var(--time-stick-transition) * 4);
+}
+
+.logo-stick {
+    position: absolute;
+    background-color: var(--secondaryHelloColor);
+}
+
+.logo-stick.top {
+    left: 0;
+    top: 0;
+    height: var(--logo-stick-stroke);
+    /* width: 100%; */
+    animation: stick-horizontal var(--time-stick-transition) linear forwards;
+    animation-delay: 0;
+}
+
+.logo-stick.right {
+    float: right;
+    right: 0;
+    top: 0;
+    /* height: 100%; */
+    width: var(--logo-stick-stroke);
+    animation: stick-vertical var(--time-stick-transition) linear forwards;
+    animation-delay: var(--time-stick-transition);
+}
+
+.logo-stick.bottom {
+    float: right;
+    right: 0;
+    bottom: 0;
+    height: var(--logo-stick-stroke);
+    /* width: 100%; */
+    animation: stick-horizontal var(--time-stick-transition) linear forwards;
+    animation-delay: calc(var(--time-stick-transition) * 2);
+}
+
+.logo-stick.left {
+    left: 0;
+    bottom: 0;
+    /* height: 100%; */
+    width: var(--logo-stick-stroke);
+    animation: stick-vertical var(--time-stick-transition) linear forwards;
+    animation-delay: calc(var(--time-stick-transition) * 3);
+}
+
+.logo-loader img {
+    position: absolute;
+    width: 70%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: logo-word .3s linear forwards;
+    animation-delay: calc(var(--time-stick-transition) * 3.7);
+}
+
+
+
+@keyframes stick-horizontal {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes stick-vertical {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 100%;
+    }
+}
+
+@keyframes logo-go-out {
+    0% {
+       transform: scale(1);
+    }
+
+    80% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes logo-word {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

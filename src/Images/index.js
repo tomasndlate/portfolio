@@ -9,11 +9,14 @@ import iconPhotoshop from "./Icons/photoshop-icon.png"
 
 import iconPortfolio from "./Icons/portfolio-icon.png"
 
+import loaderLogo from "./Icons/loader-logo-tn.png"
+
 import fotoHello from "./Photos/foto-tomas.png"
 import fotoContact from "./Photos/foto2-tomas.png"
 
 
 export {iconReact, iconCSS, iconPython, iconJS, iconPhotoshop, iconGithub, iconLinkedIn};
 export {iconPortfolio}
+export {loaderLogo}
 export {fotoHello}
 export {fotoContact}

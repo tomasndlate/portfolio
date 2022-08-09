@@ -14,13 +14,15 @@ import {
 
 import { HelloPhoto } from "./HelloPhoto/HelloPhoto";
 
+import { sleep } from "../../Helper/index";
+
 const Hello = (props, ref) => {
   const wordsEffect = [" Software Dev", " Front-end Dev", "n IT Graduated"];
   const [word, setWord] = useState("");
 
-  function sleep(ms) {
-    return new Promise((resolve) => setTimeout(resolve, ms));
-  }
+  // function sleep(ms) {
+  //   return new Promise((resolve) => setTimeout(resolve, ms));
+  // }
 
   async function changeWordEffect() {
     let wordPosition = 0;
