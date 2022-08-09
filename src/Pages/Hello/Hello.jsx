@@ -39,7 +39,7 @@ const Hello = (props, ref) => {
       // TEMPO QUE A PLAVRA FICA VISIVEL
       await sleep(1 * 3000);
 
-      // REMOVER CARACTER
+      // REMOVER CARACTER -
       for (let k = wordLength; k >= 0; k--) {
         await sleep(1 * 80);
         setWord((word) => word.slice(0, -1));
