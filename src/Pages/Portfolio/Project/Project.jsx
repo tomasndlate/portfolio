@@ -9,6 +9,13 @@ const Project = (props) => {
 
   return (
     <div className="mainProjectPortfolio">
+      <h2 className="title-project">
+        <span>
+          {props.projectId}
+          <div />
+        </span>
+        {props.nome}
+      </h2>
       <div className="blockPhotoProject">
         <div className="barPhotoProject">
           <div className="circleBarProject circle-red"></div>
@@ -34,7 +41,7 @@ const Project = (props) => {
         </div>
         <div className="nameProject">
           <div className="nameProjectPopUp">
-            <h2>Chess web game</h2>
+            <h2>Description</h2>
             <p>{props.descricao}</p>
           </div>
         </div>

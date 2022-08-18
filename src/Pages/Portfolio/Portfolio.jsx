@@ -13,6 +13,7 @@ function uploadPortfolioProjects() {
     let data = PortfolioJson.portfolio[keyBloco];
     result.push(
       <Project
+        projectId={data.projectId}
         link={data.link}
         nome={data.nome}
         descricao={data.descricao}

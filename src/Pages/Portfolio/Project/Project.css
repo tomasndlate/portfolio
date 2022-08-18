@@ -8,6 +8,34 @@
     /* background-color: goldenrod; */
 }
 
+.title-project{
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 14px;
+    letter-spacing: .18em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: var(--secondaryTextColor);
+    align-items: center;
+}
+
+.title-project span{
+    color: var(--thirdTextColor);
+}
+
+.title-project span div{
+    position: relative;
+    display: inline-block;
+    top: -4px;
+    margin-left: 8px;
+    margin-right: 12px;
+    width: 30px;
+    height: 1px;
+    background-color: var(--thirdTextColor);
+}
+
 .blockPhotoProject{
     position: relative;
     width: 100%;
@@ -124,12 +152,11 @@
 
 .nameProjectPopUp h2{
     position: relative;
-    font-size: 14px;
-    letter-spacing: .18em;
-    font-weight: 500;
-    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: .08em;
     margin-bottom: 10px;
-    color: var(--secondaryTextColor);
+    color: var(--thirdTextColor);
 }
 
 .nameProjectPopUp p {
