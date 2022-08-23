@@ -33,7 +33,7 @@ const App = () => {
       {loaderActive ? <Loader /> : null}
       <ForwaredHello ref={refs.refHello} />
       <ForwaredResume ref={refs.refResume} />
-      <ForwaredPortfolio ref={refs.refPortfolio} />
+      {/* <ForwaredPortfolio ref={refs.refPortfolio} /> */}
       <ForwaredContact ref={refs.refContact} />
     </div>
   );

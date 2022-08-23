@@ -30,13 +30,13 @@ const Navbar = (props) => {
         >
           Resume
         </h4>
-        <h4
+        {/* <h4
           onClick={() => {
             scrollTo(props.refs.refPortfolio.current);
           }}
         >
           Portfolio
-        </h4>
+        </h4> */}
         <h4
           onClick={() => {
             scrollTo(props.refs.refContact.current);
