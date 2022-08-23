@@ -1,7 +1,7 @@
 import React from "react";
 import "./Contact.css";
 
-import { fotoContact } from "../../Images/index";
+import { fotoHello } from "../../Images/index";
 
 const Contact = (props, ref) => {
   return (
@@ -18,9 +18,15 @@ const Contact = (props, ref) => {
       <div className="blockCardContact">
         <div className="cardContact">
           <div className="circlePhotoContact">
-            <img src={fotoContact} alt="Foto - Tomás Ndlate" />
+            <img src={fotoHello} alt="Foto - Tomás Ndlate" />
           </div>
-          <h2 className="nameContact">Tomás Ndlate</h2>
+          <a
+            href="https://www.linkedin.com/in/tomasndlate/"
+            to="_blank"
+            className="nameContact"
+          >
+            <h2>Tomás Ndlate</h2>
+          </a>
           <h3 className="emailContact">tomasndlate.it@gmail.com</h3>
         </div>
       </div>

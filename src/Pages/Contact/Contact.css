@@ -92,7 +92,7 @@
     position: relative;
     width: 30%;
     padding-top: 30%;
-
+    overflow: hidden;
     border-radius: 50%;
     background-color: var(--secondaryTextColor);
     -moz-box-shadow:
@@ -108,20 +108,25 @@
 
 .circlePhotoContact img{
     position: absolute;
-    top: 50%;
+    bottom: -20%;
     left: 50%;
-    transform: translate(-50%, -29.3%);
-    height: 140%;
+    transform: translateX(-50%);
+    height: 110%;
     width: auto;
 }
 
 .nameContact{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nameContact h2{
     font-size: 14px;
     font-weight: 500;
     letter-spacing: .18em;
     text-transform: uppercase;
     padding: 5px 40px;
-    margin-top: 10%; /*IMPORTANTE E PRECISO*/
+    margin-top: 10%;
     background-color: var(--secondaryTextColor);
     color: rgb(0, 0, 0);
     border-radius: 2px;
