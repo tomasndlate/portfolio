@@ -34,6 +34,7 @@ const App = () => {
       <ForwaredHello ref={refs.refHello} />
       <ForwaredResume ref={refs.refResume} />
       {/* <ForwaredPortfolio ref={refs.refPortfolio} /> */}
+      <h1>ola</h1>
       <ForwaredContact ref={refs.refContact} />
     </div>
   );

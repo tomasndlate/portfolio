@@ -27,7 +27,7 @@ function uploadResumeHistory() {
 
       for (keyLogo in data.experiencia[keyExp].logotipos) {
         logos.push(
-          <a href="">
+          <a>
             <img
               src={
                 "./Images/Logotipos/" +
